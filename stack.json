@@ -1,0 +1,80 @@
+{
+    "Stacks": [
+        {
+            "StackId": "arn:aws:cloudformation:us-east-1:673666028488:stack/planka-boards/aea9d010-9671-11ef-add6-0affd3bbe6e1",
+            "StackName": "planka-boards",
+            "ChangeSetId": "arn:aws:cloudformation:us-east-1:673666028488:changeSet/samcli-deploy1730260046/dd2fb22d-8dae-4b9a-be90-e1f383184e60",
+            "Description": "Boxie Kanban Board using Planka",
+            "Parameters": [
+                {
+                    "ParameterKey": "DomainName",
+                    "ParameterValue": "boxie.ai"
+                },
+                {
+                    "ParameterKey": "CloudFrontDefaultRootObject",
+                    "ParameterValue": "index.html"
+                },
+                {
+                    "ParameterKey": "BucketErrorDocument",
+                    "ParameterValue": "error.html"
+                },
+                {
+                    "ParameterKey": "HostedZoneIdProd",
+                    "ParameterValue": "Z03850243JY72J8U3JMYU"
+                },
+                {
+                    "ParameterKey": "env",
+                    "ParameterValue": "prod"
+                },
+                {
+                    "ParameterKey": "BucketIndexDocument",
+                    "ParameterValue": "index.html"
+                },
+                {
+                    "ParameterKey": "SubDomainName",
+                    "ParameterValue": "boards"
+                },
+                {
+                    "ParameterKey": "CFDistributionPriceClass",
+                    "ParameterValue": "PriceClass_All"
+                }
+            ],
+            "CreationTime": "2024-10-30T03:47:27.923000+00:00",
+            "LastUpdatedTime": "2024-10-30T03:47:34.319000+00:00",
+            "RollbackConfiguration": {},
+            "StackStatus": "CREATE_COMPLETE",
+            "DisableRollback": false,
+            "NotificationARNs": [],
+            "Capabilities": [
+                "CAPABILITY_IAM"
+            ],
+            "Outputs": [
+                {
+                    "OutputKey": "CloudfrontDistributionId",
+                    "OutputValue": "E3QQI3K2S4QB0B",
+                    "Description": "Cloudfront distribution for serverless website"
+                },
+                {
+                    "OutputKey": "StaticSiteBucket",
+                    "OutputValue": "boards.boxie.ai-prod-673666028488",
+                    "Description": "S3 Bucket for static website content"
+                },
+                {
+                    "OutputKey": "WebsiteLogsBucket",
+                    "OutputValue": "boards.boxie.ai-prod-logs-673666028488",
+                    "Description": "S3 Bucket for logging"
+                },
+                {
+                    "OutputKey": "WebEndpoint",
+                    "OutputValue": "d1ymktksjlpf9u.cloudfront.net",
+                    "Description": "Cloudfront distribution URL"
+                }
+            ],
+            "Tags": [],
+            "EnableTerminationProtection": false,
+            "DriftInformation": {
+                "StackDriftStatus": "NOT_CHECKED"
+            }
+        }
+    ]
+}
