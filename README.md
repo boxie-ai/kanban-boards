@@ -2,9 +2,17 @@
 
 Este repositorio es para automatizar el despliegue de planka intentando evitar hacer un fork del repositorio original.
 
+## Front env variables
+
+```sh
+NODE_ENV=production
+BASE_URL=http://localhost:3000
+```
+
 ## Construir build
 
 - Ir al otro repositorio (`../planka`)
+- `nvm use 18`
 - `npm ci`
 - `npm run client:build`
 
